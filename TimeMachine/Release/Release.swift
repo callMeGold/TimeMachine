@@ -101,7 +101,6 @@ class Release:UIViewController,UITableViewDataSource,UITableViewDelegate,UIColle
         headerCollection?.delegate=self;
         headerCollection?.tag=100;
         headerCollection?.dataSource=self;
-        headerCollection?.backgroundColor=UIColor.redColor()
         headerCollection?.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier:"cell" )
         headerView.addSubview(headerCollection!);
         headerViewH=CGRectGetMaxY(headerCollection!.frame)+10
